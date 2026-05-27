@@ -4,40 +4,28 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class WeatherCurrent {
-    @SerializedName("temperature")
+    @SerializedName("temperature_2m")
     @Expose
-    private double temperature;
+    private double temperature_2m;
 
-    public double getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(double temperature) {
-        this.temperature = temperature;
-    }
-
-    public int getRelativeHumidity() {
-        return relativeHumidity;
-    }
-
-    public void setRelativeHumidity(int relativeHumidity) {
-        this.relativeHumidity = relativeHumidity;
-    }
-
-    public double getWindSpeed() {
-        return windSpeed;
-    }
-
-    public void setWindSpeed(double windSpeed) {
-        this.windSpeed = windSpeed;
-    }
-
-    @SerializedName("relativeHumidity")
+    @SerializedName("relative_Humidity_2m")
     @Expose
-    private int relativeHumidity;
+    private int relative_Humidity_2m;
 
-    @SerializedName("windSpeed")
+    @SerializedName("windSpeed_10m")
     @Expose
-    private double windSpeed;
+    private double windSpeed_10m;
+
+    public double getTemperature_2m() {
+        return temperature_2m;
+    }
+
+    public int getRelative_Humidity_2m() {
+        return relative_Humidity_2m;
+    }
+
+    public double getWindSpeed_10m() {
+        return windSpeed_10m;
+    }
 
 }
